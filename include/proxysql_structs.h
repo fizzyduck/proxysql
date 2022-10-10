@@ -1151,7 +1151,7 @@ mysql_variable_st mysql_tracked_variables[] {
 	{ SQL_UNIQUE_CHECKS,              SETTING_VARIABLE, true,  false, false, true,  (char *)"unique_checks",              NULL, (char *)"" , false} ,
 	{ SQL_WSREP_OSU_METHOD,           SETTING_VARIABLE, true,  false, false, false, (char *)"wsrep_osu_method",           NULL, (char *)"" , false} ,
 	{ SQL_OPTIMIZER_USE_CONDITION_SELECTIVITY,
-	                                  SETTING_VARIABLE, true,  false, false, false, (char *)"optimizer_use_condition_selectivity",
+	                                  SETTING_VARIABLE, false, false, true,  false, (char *)"optimizer_use_condition_selectivity",      
 	                                                                                                                      NULL, (char *)"" , false} ,
 
 	/*
