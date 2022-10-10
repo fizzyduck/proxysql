@@ -272,6 +272,9 @@ int main() {
 
 	vars["wsrep_osu_method"] = new variable("wsrep_osu_method", true, false, false);
 	add_values_and_quotes("wsrep_osu_method", {"TOI","RSU"});
+	
+	vars["optimizer_use_condition_selectivity"] = new variable("optimizer_use_condition_selectivity", true, true, false);
+	vars["optimizer_use_condition_selectivity"]->add({1, 5}, 4);
 /*
 example:
 "SET sql_mode='NO_ENGINE_SUBSTITUTION', sql_select_limit=3030, session_track_gtids=OWN_GTID; SET max_join_size=10000; ", "{'sql_mode':'NO_ENGINE_SUBSTITUTION','sql_select_limit':'3030', 'max_join_size':'10000', 'session_track_gtids':'OWN_GTID'}"
