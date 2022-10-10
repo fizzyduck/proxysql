@@ -213,7 +213,7 @@ void queryVariables(MYSQL *mysql, json& j, std::string& paddress) {
 	query << ", 'default_storage_engine', 'default_tmp_storage_engine'";
 	query << ", 'innodb_lock_wait_timeout', 'innodb_strict_mode', 'innodb_table_locks'";
 	query << ", 'join_buffer_size', 'lock_wait_timeout'";
-	query << ", 'sort_buffer_size', 'optimizer_switch', 'optimizer_search_depth', 'optimizer_prune_level'";
+	query << ", 'sort_buffer_size', 'optimizer_switch', 'optimizer_search_depth', 'optimizer_prune_level', 'optimizer_use_condition_selectivity'";
 	query << ", 'max_execution_time', 'long_query_time', 'tmp_table_size', 'max_heap_table_size'";
 	query << ", 'lc_messages', 'lc_time_names', 'timestamp', 'max_sort_length', 'sql_big_selects'";
 	// the following variables are likely to not exist on all systems
